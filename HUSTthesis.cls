@@ -787,8 +787,10 @@
       \hfill \parbox[t]{\textwidth}{\centering\wuhao\thepage\strut}\hfill
       }}}
    \else
-   \def\footrule{{\vskip-0.3\normalbaselineskip\vskip-\footrulewidth
-   \hrule\@width 1.04\textwidth\@height\footrulewidth\vskip0.45\normalbaselineskip}}
+  %  \def\footrule{{\vskip-0.3\normalbaselineskip\vskip-\footrulewidth
+  %     \hrule\@width 1.04\textwidth\@height\footrulewidth\vskip0.45\normalbaselineskip}}
+    \def\footrule{{\vskip-0.3\normalbaselineskip\vskip-\footrulewidth
+      \textcolor[RGB]{212,14,14}{\hrule\@width 1.04\textwidth\@height\footrulewidth}\vskip0.45\normalbaselineskip}}
    \def\@oddfoot{%
      \hbox to \textwidth{%
      \hspace{-4mm}\vbox{%
