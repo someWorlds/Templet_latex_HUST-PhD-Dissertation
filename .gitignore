@@ -17,5 +17,5 @@
 *.gls
 *.ist
 *.fls
-*.fdb_latexmk
 *.thm
+*.fdb_latexmk
