@@ -81,12 +81,15 @@ Let \(f\) be a function whose derivative exists in every point, then \(f\)  is a
 
 
 \section{公式的自动编号与引用}
-举例：这里我们考虑一个由$N$个跟随者和一个编号为0的领导者$L_w = 150 m$构成的多自主体网络。其中，跟随者的动力学由如下动力学描述
+举例：这里我们考虑一个由$N$个跟随者和一个编号为0的领导者$L_w = 150 m$构成的多自主体网络。其中，跟随者的动力学由如下式\ref{eq_dy}动力学描述
 \begin{equation}
 \sum_{i=1}^{\left[ \frac{n}{2}\right]} \binom{x_{i,i+1}^{i^2}}
 {\left[\frac{i+3}{3} \right]} \frac{\sqrt{\mu(i)^{\frac{3}{2}}
 (i^2-1)}} {\sqrt[3]{\rho(i)-2}+\sqrt[3]{\rho(i)-1}}
+\label{eq_dy}
 \end{equation}
+
+用ref引用公式是不带括号的\ref{eq_dy}。测试一下用新的公式的引用方式eqref是否带括号\eqref{eq_dy}。
 
 \begin{align}
 \sum_{i=1} = & a \nonumber \\
