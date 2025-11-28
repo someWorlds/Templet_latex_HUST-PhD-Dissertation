@@ -346,7 +346,7 @@
   %\dawu
   \rmfamily
   \song
-  \setstretch{.9} %在图表标题长度超过一行时，调整行间距使之与正文行间距一致
+  \setstretch{1.3} %在图表标题长度超过一行时，调整行间距使之与正文行间距一致
   \vskip\abovecaptionskip
   \wuhao[1.4]
   % 去掉图表号后面的":"
@@ -379,8 +379,8 @@
 
 
 % 设置标题前后间距
-\setlength\abovecaptionskip{12bp}
-\setlength\belowcaptionskip{12bp}
+\setlength\abovecaptionskip{0bp}
+\setlength\belowcaptionskip{3bp}
 
 % 下面两条命令可以使标题编号随着每开始新的一章而重新开始，即按章的顺序编号
 \renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}
