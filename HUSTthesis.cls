@@ -279,6 +279,13 @@
 \abovedisplayshortskip=10bp plus 2bp minus 2bp
 \belowdisplayskip=\abovedisplayskip
 \belowdisplayshortskip=\abovedisplayshortskip
+% % 重新设置公式与上下文的间距（使用基于当前行距的值，使之与正文行间距一致）
+% \setlength{\abovedisplayskip}{0.5\baselineskip}
+% \setlength{\abovedisplayshortskip}{0.5\baselineskip}
+% \setlength{\belowdisplayskip}{0.5\baselineskip}
+% \setlength{\belowdisplayshortskip}{0.5\baselineskip}
+% % 重新设置多行公式内部行距（可按需微调，例如 0.5\baselineskip）
+% \setlength{\jot}{0.5\baselineskip}
 
 % 设置公式的编号形式，形式为 (式1.1)，\tagform@ 参考 amsmath 中的命令
 \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
