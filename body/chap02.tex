@@ -93,9 +93,9 @@
 用ref引用公式是不带括号的\ref{eq_dy}。测试一下用新的公式的引用方式eqref是否带括号\eqref{eq_dy}。
 \begin{align}
   \sum_{i=1} = & a \nonumber \\
-               & b
+            c = & b
 \end{align}
-其中第$i$个自主体的状态$x_i (t)\in R$，f$(x_i (t))$代表非线性连续可微函数，$U_i$表示节点i的控制输入。
+nonumber可以控制align的第一行不显示公式编号。其中第$i$个自主体的状态$x_i (t)\in R$，f$(x_i (t))$代表非线性连续可微函数，$U_i$表示节点i的控制输入。
 
 测试一下公式的间距，增加一些文字。在文字后下一行直接输入公式，则公式与上文的行间距是正常的。
 \begin{equation}
