@@ -386,8 +386,10 @@
 
 
 % 设置标题前后间距
-\setlength\abovecaptionskip{0bp}
-\setlength\belowcaptionskip{3bp}
+\setlength\abovecaptionskip{8bp}
+\setlength\belowcaptionskip{8bp}
+% \setlength{\intextsep}{6.5bp plus 2bp minus 2bp} % 浮动体“here/in-text”放置时，浮动盒子与前后正文之间的垂直间距（上下都用此值）。
+% \setlength{\textfloatsep}{6.5bp plus 2bp minus 2bp} % 浮动体放在页面顶端/底端时，浮动盒子与正文之间的距离（顶/底用此值）。
 
 % 下面两条命令可以使标题编号随着每开始新的一章而重新开始，即按章的顺序编号
 \renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}
