@@ -130,7 +130,22 @@ nonumber可以控制align的第一行不显示公式编号。其中第$i$个自�
 \end{align}
 测试一下引用align里面的公式编号，如公式\eqref{eqtest2}及\eqref{eqtest3}。测试一下公式的间距，增加一些文字。测试一下公式的间距，增加一些文字。测试一下公式的间距，增加一些文字。测试一下公式的间距，增加一些文字。测试一下公式的间距，增加一些文字。测试一下公式的间距，增加一些文字。测试一下公式的间距，增加一些文字。测试一下公式的间距，增加一些文字。
 
-测试bm宏包。这个宏包是用重叠来加粗字体的，很丑。$\bm{E\beta\alpha\phi\varphi \hat r n}$,$E\beta\alpha\phi\varphi \hat r n$。
+测试数学环境下各种加粗效果。结论：能不倾斜加粗就不倾斜加粗（用bm倾斜加粗重影，很丑）；用mathbf是正体加粗。
+
+测试bm宏包。这个宏包是用重叠来加粗字体的，很丑。这是加粗的$\bm{E\beta\alpha\phi\varphi \hat r n}$，这是没有加粗的$E\beta\alpha\phi\varphi \hat r n$。
+
+用mathrm加粗$\mathrm{\alpha n \vec{E}}\vec E$，在括号里面的箭头会加粗会变成波浪线。
+用mathbf加粗$\mathbf{\alpha n \vec{E}}\vec E$，在括号里面的箭头会加粗会变成波浪线。
+
+看一下正文里面怎么加粗\boldmath$\alpha n \vec E$。
+
+\begin{equation}
+  \alpha n \vec E
+\end{equation}
+
+$$
+E = \mathbf{m} c^2 + \boldsymbol{\alpha} \cdot \mathbf{p} + \boldsymbol{\beta} m_0
+$$
 
 测试括号$a_{\Vert}a_{||}a_{\vert\vert}a_{\|}a_{_{||}}a_{\scriptscriptstyle\Vert}a_{\scriptscriptstyle\parallel\bot}a_{\bot\scriptscriptstyle\|}a_{\bot\|}$。
 
