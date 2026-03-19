@@ -152,7 +152,7 @@ FUNCTION {bibinfo.check}
 
 FUNCTION {format.note}
 {
-  ""
+  ""  % 这里注释掉了这个函数的所有内容，目的是不让参考文献中输出note。整个文件里面的note output命令也都被注释掉了。
 %  note empty$
 %     { "" }
 %     { note #1 #1 substring$
