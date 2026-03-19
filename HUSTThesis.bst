@@ -152,21 +152,22 @@ FUNCTION {bibinfo.check}
 
 FUNCTION {format.note}
 {
- note empty$
-    { "" }
-    { note #1 #1 substring$
-      duplicate$ "{" =
-        'skip$
-        { output.state mid.sentence =
-          { "l" }
-          { "u" }
-        if$
-        change.case$
-        }
-      if$
-      note #2 global.max$ substring$ * "note" bibinfo.check
-    }
-  if$
+  ""
+%  note empty$
+%     { "" }
+%     { note #1 #1 substring$
+%       duplicate$ "{" =
+%         'skip$
+%         { output.state mid.sentence =
+%           { "l" }
+%           { "u" }
+%         if$
+%         change.case$
+%         }
+%       if$
+%       note #2 global.max$ substring$ * "note" bibinfo.check
+%     }
+%   if$
 }
 
 FUNCTION {output}
@@ -901,7 +902,7 @@ FUNCTION {book} { output.bibitem
   format.address.publisher output
   format.date "year" output.check
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -924,7 +925,7 @@ FUNCTION {article}
     }
   if$
   new.block 
-  note output
+  % note output
   fin.entry
 }
 
@@ -947,7 +948,7 @@ FUNCTION {incollection}
     }
   if$
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -992,7 +993,7 @@ FUNCTION {inproceedings}
     }
   if$
   new.block
-  note output  
+  % note output  
   fin.entry
 }
 
@@ -1006,7 +1007,7 @@ FUNCTION {booklet}
   address output
   format.date output
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -1037,7 +1038,7 @@ FUNCTION {inbook} { output.bibitem
   format.date "year" output.check
   format.chapter.pages "chapter and pages" output.check
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -1073,7 +1074,7 @@ FUNCTION {manual}
   %format.edition output
   format.date output
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -1095,7 +1096,7 @@ FUNCTION {mastersthesis}
   %school "school" output.check  
   format.date "year" output.check
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -1109,7 +1110,7 @@ FUNCTION {misc}
   format.date output
   format.url output
   new.block
-  note output
+  % note output
   fin.entry
   empty.misc.check
 }
@@ -1132,7 +1133,7 @@ FUNCTION {phdthesis}
   %school "school" output.check  
   format.date "year" output.check
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -1167,7 +1168,7 @@ FUNCTION {proceedings}
     }
   if$
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -1183,7 +1184,7 @@ FUNCTION {techreport}
   format.date "year" output.check
   format.url output
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -1194,7 +1195,7 @@ FUNCTION {patent} { output.bibitem
   format.date "year" output.check
   format.pages output
   new.block
-  note output
+  % note output
   fin.entry
 }
 
@@ -1204,7 +1205,7 @@ FUNCTION {unpublished}
   new.block
   format.title "title" output.check
   new.block
-  note "note" output.check
+  % note "note" output.check
   format.date output
   fin.entry
 }
